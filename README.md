@@ -23,6 +23,7 @@ Jugeo de scroll lateral en el que el jugador controlará un unicornio que deber�
 
 - Efectos de sonido
 - Item invulneravilidad
+- Incremento de velocidad
 - Vidas/contador
 - Opción música/sonido on/off
 - Pantalla de instrucciones
