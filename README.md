@@ -12,15 +12,15 @@ Jugeo de scroll lateral en el que el jugador controlará un unicornio que deber�
 ## MVP:
 
 - Jugador
-- Items a recoger
 - Obstáculos
-- Fondo
-- Música
 - Pantalla de inicio
 - Pantalla Game Over y puntuación
 
-## Nice to have:
+## Backlog:
 
+- Fondo
+- Música
+- Items a recoger
 - Efectos de sonido
 - Item invulneravilidad
 - Incremento de velocidad
