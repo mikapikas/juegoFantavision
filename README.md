@@ -14,13 +14,14 @@ Jugeo de scroll lateral en el que el jugador controlará un unicornio que deber�
 - Jugador
 - Obstáculos
 - Pantalla de inicio
-- Pantalla Game Over y puntuación
+- Pantalla Game Over
 
 ## Backlog:
 
 - Fondo
 - Música
 - Items a recoger
+- Puntuación
 - Efectos de sonido
 - Item invulneravilidad
 - Incremento de velocidad
