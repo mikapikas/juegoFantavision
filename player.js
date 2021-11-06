@@ -1,5 +1,5 @@
 class Player {
-    constructor(posX, posY, width =10, height, color, ctx ) {
+    constructor(posX, posY, width, height, color, ctx ) {
         this.posX = posX
         this.posY = posY
         this.width = width;
@@ -14,9 +14,9 @@ class Player {
     }
 
     moveUp() {
-        // this.y = this.y - 1;
+        this.posY = this.posY - 20;
     }
     moveDown(){
-        // this.y = this.y +1;
+        this.posY = this.posY + 20;
     }
 }

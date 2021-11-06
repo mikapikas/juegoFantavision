@@ -1,13 +1,25 @@
 class Game{
     constructor(ctx){
         this.player = new Player(50, 275, 50, 50, "blue", ctx)
+        this.obstacl= new Obstacle();
         this.ctx = ctx;
         this.obstacles = [];
     }
 
-    _assignarControles(){
-        // teclas arriba this.player.moveUp()
-    }
+    _assignControl() {
+        document.addEventListener('keydown', (event) => {
+            switch (event.code) {
+              case 'ArrowUp':
+                this.player.moveUp();
+                break;
+              case 'ArrowDown':
+                this.player.moveDown();
+                break;
+              default:
+                break;
+            }
+          });
+        }
 
     _generateObstacles(){
         // const obstacle1 = new Obstacles(10, 10, 100, )
@@ -16,14 +28,18 @@ class Game{
         // llamar funcion _move()
     }
 
+    _clean(){
+        this.ctx.clearRect(0,0,900,600);
+    }
+
     _renderGame(){
+        this._clean();
         this.player._drawPlayer();
         window.requestAnimationFrame(this._renderGame.bind(this))
     }
 
     start(){
+        this._assignControl();
         window.requestAnimationFrame(this._renderGame.bind(this))
-        // request animation frame
-        // this.player._drawPlayer()
     }
 }
