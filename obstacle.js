@@ -1,10 +1,14 @@
-class Obstacle{
-    constructor (posX, posY, width, height,color, speed, ctx) {
-        this.posX = posX
-        this.posY = posY
-        this.width = width
-        this.speed = speed^
-        this.interval;
+class Obstacle {
+    constructor(posX, posY, width, height, color, ctx) {
+        this.posX = posX;
+        this.posY = posY;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+        //this.speed = speed;
+        //this.interval = interval;
+        this.ctx = ctx;
+        
     }
 
     _drawObstacle(){

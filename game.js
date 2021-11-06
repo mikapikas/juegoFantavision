@@ -1,7 +1,7 @@
 class Game{
     constructor(ctx){
         this.player = new Player(50, 275, 50, 50, "blue", ctx)
-        this.obstacl= new Obstacle();
+        this.obstacle= new Obstacle(850 , 275 , 70, 70, "red", ctx);
         this.ctx = ctx;
         this.obstacles = [];
     }
@@ -35,6 +35,7 @@ class Game{
     _renderGame(){
         this._clean();
         this.player._drawPlayer();
+        this.obstacle._drawObstacle();
         window.requestAnimationFrame(this._renderGame.bind(this))
     }
 
