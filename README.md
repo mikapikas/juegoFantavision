@@ -13,8 +13,7 @@ Jugeo de scroll lateral en el que el jugador controlará un unicornio que deber�
 
 - Jugador
 - Obstáculos
-- Pantalla de inicio
-- Pantalla Game Over
+- Colisiones
 
 ## Backlog:
 

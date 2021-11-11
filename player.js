@@ -17,9 +17,9 @@ class Player {
     }
 
     moveUp() {
-        this.posY = this.posY - 20;
+        this.posY = this.posY - 50;
     }
     moveDown(){
-        this.posY = this.posY + 20;
+        this.posY = this.posY + 50;
     }
 }

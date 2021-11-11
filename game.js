@@ -3,7 +3,7 @@ class Game{
         this.player = new Player(50, 275, 50, 50, "blue", ctx)
         this.obstacle= new Obstacle(800 , 275 , 70, 70, "red", ctx);
         this.ctx = ctx;
-        this.obstacles = [new Obstacle(1000 , 175 , 70, 70, "red", ctx), new Obstacle(1000 , 375 , 70, 70, "red", ctx)];
+        this.obstacles = [new Obstacle(1000 , 265 , 70, 70, "red", ctx)];
         this.interval;
     }
 
@@ -32,7 +32,7 @@ class Game{
             this.obstacles.push(obstacle);
             console.log(obstacle);
             console.log('Array', this.obstacles);
-        }, 500);
+        }, 350);
     }
 
     _checkCollisions(){
