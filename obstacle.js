@@ -1,14 +1,13 @@
 class Obstacle {
-    constructor(posX, posY, width, height, color, ctx) {
+    constructor(posX, posY, width, height, color, ctx,) {
         this.posX = posX;
         this.posY = posY;
         this.width = width;
         this.height = height;
         this.color = color;
         //this.speed = speed;
-        //this.interval = interval;
         this.ctx = ctx;
-        
+        //this.interval = interval;
     }
 
     _drawObstacle(){
@@ -16,8 +15,11 @@ class Obstacle {
         this.ctx.fillRect(this.posX, this.posY, this.width, this.height)
     }
 
-    _MOVE(){
-        // this.interval = setInterval()
-        // muevo la x la resto
+    _move(){
+        //this.interval = setInterval()
+        setInterval(() => {
+            this.posX = this.posX - 5;
+        }, 300);
+
     }
 }
